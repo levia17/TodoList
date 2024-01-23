@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+// LIB
+import clsx from "clsx";
+
+// LIB
+import { Route, Routes } from "react-router-dom";
+// CSS
+import GlobalStyle from "./GlobalStyle/GlobalStyle.jsx";
+import style from "./App.module.scss";
+
+// Components
+import { Intro } from "./components/intro.jsx";
+import MainPage from "./components/mainPage/mainPage.jsx";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <GlobalStyle>
+      <div className={clsx(style.App)}>
+        <Routes>
+          <Route path="/" element={<Intro />} />
+          <Route path="/mainPage" element={<MainPage />} />
+        </Routes>
+      </div>
+    </GlobalStyle>
   );
 }
 

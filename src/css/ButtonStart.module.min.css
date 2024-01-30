@@ -1,0 +1,1 @@
+.Button{position:absolute;top:35em;left:25em;background-color:#6e6c6c;width:13em;height:4em;border-radius:5em;transition:.2s;cursor:pointer}.Button:hover{background-color:#687ae4;box-shadow:0 0 20px #687ae4}.Button:hover .btn_text{color:#2d49e7}.Button .btn_text{text-decoration:none;font-family:"Franklin Gothic Medium","Arial Narrow",Arial,sans-serif;color:#868686;font-size:3em}

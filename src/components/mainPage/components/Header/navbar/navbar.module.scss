@@ -1,0 +1,64 @@
+.Navbar{
+    position: absolute;
+    background-color: #2791f5;
+    border-radius: 1em;
+    width: 1800px;
+    height: 5em;
+    margin-left: 2%;
+    &.show{
+        animation: appear 0.5s forwards;
+        :nth-child(n){
+            animation: AppearElement 0.4s forwards;
+        }
+    }
+    &.hidden{
+        animation: disappear 0.5s forwards;
+        :nth-child(n){
+            animation: disAppearElement 0.2s forwards;
+        }
+    }
+}
+
+
+@keyframes appear {
+    0%{
+        max-width: 0%;
+    }
+    100%{
+        max-width: 100%;
+    }
+}
+
+@keyframes disappear {
+    0%{
+        max-width: 100%;
+    }
+    100%{
+        max-width: 0%;
+        display: none;
+    }
+}
+
+@keyframes disAppearElement {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes AppearElement {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

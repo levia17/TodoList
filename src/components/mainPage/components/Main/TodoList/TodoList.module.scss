@@ -7,6 +7,7 @@
   width: 400px;
   height: 400px;
   .title {
+    margin-top: 0.5em;
     text-align: center;
   }
   .btnAddWork {
@@ -23,7 +24,7 @@
     }
   }
   .input {
-    width: 10em;
+    width: 15em;
     height: 2em;
     margin-top: 4em;
     margin-left: 7em;
@@ -37,10 +38,12 @@
     .job {
       margin-left: 1em;
       font-size: 2em;
+      width: 10em;
+      height: 1.5em;
       .containerInput{
         // background-color: #fff;
-        width: 50px;
-        height: 50px;
+        width: 10em;
+        height: 1em;
         gap: 0.5em;
         input{
           opacity: 0;
@@ -48,6 +51,14 @@
             opacity: 1;
           }
         }
+      }
+      .btnDelete{
+        background-color: #fff;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold; 
+        font-size: 0.5em;
+        width: 1rem;
+        height: 1rem;
       }
     }
   }

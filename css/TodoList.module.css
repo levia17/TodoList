@@ -8,6 +8,7 @@
   height: 400px;
 }
 .container .title {
+  margin-top: 0.5em;
   text-align: center;
 }
 .container .btnAddWork {
@@ -24,7 +25,7 @@
   font-size: 2em;
 }
 .container .input {
-  width: 10em;
+  width: 15em;
   height: 2em;
   margin-top: 4em;
   margin-left: 7em;
@@ -38,10 +39,12 @@
 .container .containerJob .job {
   margin-left: 1em;
   font-size: 2em;
+  width: 10em;
+  height: 1.5em;
 }
 .container .containerJob .job .containerInput {
-  width: 50px;
-  height: 50px;
+  width: 10em;
+  height: 1em;
   gap: 0.5em;
 }
 .container .containerJob .job .containerInput input {
@@ -49,4 +52,12 @@
 }
 .container .containerJob .job .containerInput input:checked {
   opacity: 1;
+}
+.container .containerJob .job .btnDelete {
+  background-color: #fff;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 0.5em;
+  width: 1rem;
+  height: 1rem;
 }

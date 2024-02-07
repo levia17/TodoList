@@ -12,12 +12,10 @@ function BtnAdd() {
 
   const context = useContext(ListContext)
 
-  console.log(context);
-
   return (
     <div
       className={clsx(style.space, "d-flex-c")}
-      onClick={context.addTodo}
+      onClick={context.add}
       title={"New TodoList"}
     >
       <button className={style.btn}></button>
